@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alegreya</item>
+        <item>@font/amarante</item>
+        <item>@font/droid_sans_mono</item>
+        <item>@font/eczar</item>
+        <item>@font/frank_ruhl_libre</item>
+        <item>@font/roboto_condensed_regular</item>
+    </array>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="20dp"
+                android:text="@string/tentang_aplikasi"
+                android:textAlignment="viewStart"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:lineSpacingExtra="12dp"/>
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="@string/about_app_description"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
+                android:lineSpacingExtra="12dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo_ristekdikti"
+                    android:contentDescription="@string/logo_ristekdikti" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo_telkom"
+                    android:contentDescription="@string/logo_telkom_university" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_d3tt"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="20dp"
+                android:contentDescription="@string/logo_d3_teknologi_telekomunikasi" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="10dp"
+                android:text="@string/contact"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
+                android:lineSpacingExtra="12dp" />
+
+            <TextView
+                android:id="@+id/website_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/website_link_view"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
+                android:lineSpacingExtra="12dp"
+                android:textColor="@color/colorAccent"
+                />
+            <TextView
+                android:id="@+id/email_link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/contact_email_view"
+                android:textAlignment="viewStart"
+                android:textSize="16sp"
+                android:lineSpacingExtra="12dp"
+                android:textColor="@color/colorAccent"
+                />
+
+        </LinearLayout>
+
+</ScrollView>

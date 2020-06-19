@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/form_user_thumb"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:contentDescription="Gallery"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_menu_gallery" />
+
+        <RelativeLayout
+            android:id="@+id/form_user_layoutcam"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/circle_button"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/form_user_cam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="Profile"
+                app:srcCompat="@drawable/ic_menu_camera"
+                tools:ignore="VectorDrawableCompat" />
+        </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>

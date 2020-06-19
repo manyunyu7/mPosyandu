@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ketua_list_anggota_linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ketua_list_balita_thumbs"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:cropToPadding="true"
+                android:contentDescription="Foto Profile" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ketua_list_balita_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Adi Nurfiansyah"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ketua_list_balita_ibu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Adi Nurfiansyah" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

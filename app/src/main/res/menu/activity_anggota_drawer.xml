@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person_black_24dp"
+            android:title="Beranda"/>
+        <item
+            android:id="@+id/nav_balita"
+            android:icon="@drawable/ic_child_care_black_24px"
+            android:title="Balita" />
+        <item
+            android:id="@+id/nav_ibu"
+            android:icon="@drawable/ic_pregnant_woman_black_24px"
+            android:title="Ibu Balita" />
+        <item
+            android:id="@+id/nav_cal"
+            android:icon="@drawable/ic_date_range_black_24dp"
+            android:title="Jadwal"/>
+        <item
+            android:id="@+id/nav_guide"
+            android:icon="@drawable/ic_description_black_24dp"
+            android:title="Jadwal"/>
+        <item
+            android:id="@+id/nav_about_app"
+            android:icon="@drawable/ic_info"
+            android:title="Tentang Aplikasi"/>
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_sign_out"
+            android:title="Logout"/>
+    </group>
+</menu>

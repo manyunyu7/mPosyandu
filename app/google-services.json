@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "420743423912",
+    "firebase_url": "https://posyandu-e6225.firebaseio.com",
+    "project_id": "posyandu-e6225",
+    "storage_bucket": "posyandu-e6225.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420743423912:android:87d80a07d802b28f",
+        "android_client_info": {
+          "package_name": "com.noer.m_posyandu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420743423912-q2dj45m1720ps9vuur7f9g3nueqvgcsg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfEZsJM5-oVcaps0TB3lENHcyYXEcygGQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

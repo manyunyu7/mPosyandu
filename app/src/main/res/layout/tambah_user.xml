@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clipToPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Tambah Anggota"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/colorAccent" />
+            </LinearLayout>
+
+
+
+                <FrameLayout
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/forms_users_add_thumbs"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:srcCompat="@drawable/ic_menu_gallery"
+                        android:contentDescription="Profile" />
+
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:gravity="center"
+                        android:background="@drawable/circle_button"
+                        android:layout_height="30dp">
+                        <ImageView
+                            android:id="@+id/forms_users_add_cam"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_menu_camera"
+                            tools:ignore="VectorDrawableCompat"
+                            android:contentDescription="Find" />
+                    </RelativeLayout>
+
+                </FrameLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/ic_email_black_24dp"
+                    android:tint="@color/colorAccent"
+                    android:contentDescription="Email" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/forms_users_add_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:tint="@color/colorAccent"
+
+                    app:srcCompat="@drawable/ic_person_black_24dp"
+                    android:contentDescription="Nama" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/forms_users_add_nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nama"
+                        android:inputType="textPersonName"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:tint="@color/colorAccent"
+                    app:srcCompat="@drawable/ic_vpn_key_black_24dp"
+                    android:contentDescription="Password" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/forms_users_add_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:tint="@color/colorAccent"
+                    app:srcCompat="@drawable/ic_location_on_black_24dp"
+                    android:contentDescription="Alamat" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/forms_users_add_alamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nextFocusDown="@id/forms_users_add_blok_val"
+                        android:hint="Alamat"
+                        android:inputType="text"
+                        android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:baselineAligned="false"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/forms_users_add_blok"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="44dp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/forms_users_add_blok_val"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Blok"
+                            android:nextFocusDown="@id/forms_users_add_no_val"
+                            android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/forms_users_add_no"
+                        android:nextFocusDown="@id/forms_users_add_telepon"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/forms_users_add_no_val"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="No"
+                            android:inputType="number" />
+                    </android.support.design.widget.TextInputLayout>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:tint="@color/colorAccent"
+                    app:srcCompat="@drawable/ic_phone_black_24dp"
+                    android:contentDescription="Telepon" />
+
+                <android.support.design.widget.TextInputLayout
+                android:id="@+id/forms_users_add_telepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Telepon"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/forms_users_add_submit"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="15dp"
+                android:text="Simpan"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+</ScrollView>

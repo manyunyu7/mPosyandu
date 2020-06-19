@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">E-KMS</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="mposyandu">mPosyandu</string>
+    <string name="title_activity_ketua">Ketua</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_anggota">AnggotaActivity</string>
+    <string name="_8942">⋮</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_as">as</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="about_app_description">
+        E-KMS merupakan aplikasi mobile Android sebagai
+        alternatif dari Kartu Menuju Sehat (KMS), KMS sendiri ialah kartu yang memuat kurva
+        pertumbuhan normal anak berdasarkan indeks antropometri berat badan menurut umur (BB/U).\n
+        Dengan aplikasi ini dapat menyimpan dan memberikan data tentang pertumbuhan balita seperti
+        berat badan, tinggi badan, dan lingkar kepala balita setiap bulannya. Kemudian informasi
+        jenis vitamin dan imunisasi yang sudah atau belum diberikan kepada balita. Serta dapat
+        merekap data setiap balita pada masing-masing Posyandu yang terdaftar. \n \n
+
+        <b>Disusun oleh :</b>\n
+        Dadan Nur Ramadan, S.Pd., M.T. \n
+        Yuli Sun Hariyani, S.T., M.T. \n
+        Rohmat Tulloh, S.T., M.T. \n
+        Adi Nurfiansyah, A.Md.T \n
+        Ryan Setiagi, A.Md.T \n
+        Muhammad Valian Masdani, A.Md.T \n\n
+
+        <b>Dibiayai oleh:</b>\n
+        Kementrian Riset, Teknologi, Dan Pendidikan Tinggi Republik Indonesia
+    </string>
+    <string name="penyusun_title">Aplikasi ini disusun oleh :</string>
+    <string name="Adi">Adi Nurfiansyah</string>
+    <string name="Ryan">Ryan Setiagi</string>
+    <string name="Valian">Muhammad Valian Masdani</string>
+    <string name="Pa_Dadan">Dadan Nur Ramadan, S.Pd., M.T.</string>
+    <string name="Bu_Yuli">Yuli Sun Hariyani, S.T., M.T.</string>
+    <string name="contact"><b>Kontak Layanan :</b></string>
+    <string name="contact_email">mposyandud3tt@gmail.com</string>
+    <string name="website_link">mposyandu.id</string>
+    <string name="contact_email_view">mposyandud3tt@gmail.com &#128279;</string>
+    <string name="website_link_view">www.mposyandu.id &#128279;</string>
+
+
+    <string name="action_example">Example action</string>
+</resources>
