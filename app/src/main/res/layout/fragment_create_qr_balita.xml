@@ -117,7 +117,6 @@
                                 android:id="@+id/logobm"
                                 android:layout_width="275dp"
                                 android:layout_height="90dp"
-                                android:background="#FFFFFF"
                                 android:src="@drawable/logo"
                                 app:layout_constraintBottom_toBottomOf="@+id/show_qr"
                                 app:layout_constraintEnd_toEndOf="parent"
