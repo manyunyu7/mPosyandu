@@ -136,7 +136,6 @@
                     android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#FFFFFF"
                     android:fontFamily="@font/montserrat_regular"
                     android:gravity="center"
                     android:paddingTop="10dp"

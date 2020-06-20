@@ -111,7 +111,6 @@ public class scanQRPeserta extends AppCompatActivity {
                             tvPosyandu.setText( response.getJSONArray("result").getJSONObject(0).getString("posyandu"));
                             tvJk.setText( response.getJSONArray("result").getJSONObject(0).getString("gender"));
                             Toast.makeText(scanQRPeserta.this, "Berhasil Menampilkan Data", Toast.LENGTH_SHORT).show();
-                            findViewById(R.id.detailLayout).setVisibility(View.VISIBLE);
                         } catch (JSONException e) {
                             Toast.makeText(scanQRPeserta.this, "Gagal Menampilkan Data", Toast.LENGTH_SHORT).show();
                             Toast.makeText(scanQRPeserta.this, e.getLocalizedMessage(), Toast.LENGTH_SHORT).show();

@@ -40,6 +40,8 @@ public class ScanQRBalita extends Fragment {
     CodeScanner mCodeScanner;
     UserModel user;
 
+
+
     public ScanQRBalita() {
         // Required empty public constructor
     }
@@ -60,6 +62,9 @@ public class ScanQRBalita extends Fragment {
         scannerView = isi.findViewById(R.id.scanner_view);
         mCodeScanner = new CodeScanner(getActivity(), scannerView);
         mCodeScanner.startPreview();
+
+        getActivity().findViewById(R.id.fab).setVisibility(View.GONE);
+
         mCodeScanner.setDecodeCallback(new DecodeCallback() {
             @Override
             public void onDecoded(@NonNull final Result result) {
