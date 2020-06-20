@@ -56,6 +56,9 @@ public class BalitaModel implements Parcelable {
     @SerializedName("lingkar_kepala")
     @Expose
     private String lingkar_kepala;
+    @SerializedName("id_qrcode")
+    @Expose
+    private String id_qrcode;
 
     public String getEmail() {
         return email;
@@ -209,6 +212,14 @@ public class BalitaModel implements Parcelable {
         this.lingkar_kepala = lingkar_kepala;
     }
 
+    public String getId_qrcode() {
+        return id_qrcode;
+    }
+
+    public void setId_qrcode(String id_qrcode) {
+        this.id_qrcode = id_qrcode;
+    }
+
     public BalitaModel() {
     }
 
@@ -238,6 +249,7 @@ public class BalitaModel implements Parcelable {
         dest.writeString(this.berat);
         dest.writeString(this.tinggi);
         dest.writeString(this.lingkar_kepala);
+        dest.writeString(this.id_qrcode);
     }
 
     protected BalitaModel(Parcel in) {
@@ -260,6 +272,7 @@ public class BalitaModel implements Parcelable {
         this.berat = in.readString();
         this.tinggi = in.readString();
         this.lingkar_kepala = in.readString();
+        this.id_qrcode=in.readString();
     }
 
     public static final Creator<BalitaModel> CREATOR = new Creator<BalitaModel>() {

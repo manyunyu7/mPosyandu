@@ -779,6 +779,7 @@ public class ListBalita extends Fragment {
                                 balitaList.setCreator_id(obj.getInt("creator_id"));
                                 balitaList.setAlamat(obj.getString("alamat"));
                                 balitaList.setEmail(obj.getString("email"));
+                                balitaList.setId_qrcode(obj.getString("id_qrcode"));
                                 balita.add(balitaList);
                             }
                             rv.setVisibility(View.VISIBLE);

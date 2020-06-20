@@ -1,0 +1,158 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.mposyandu.mposyandu.fragment.CreateQRBalita">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:gravity="top">
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    >
+
+
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/containerQR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:elevation="10dp"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <android.support.constraint.ConstraintLayout
+                            android:id="@+id/image_save_QR"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+
+                            <ImageView
+                                android:id="@+id/show_qr"
+                                android:layout_width="275dp"
+                                android:layout_height="275dp"
+                                android:background="@drawable/logo"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.504"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <TextView
+                                android:id="@+id/id_mentee_main"
+                                android:layout_width="275dp"
+                                android:layout_height="wrap_content"
+                                android:background="#FFFFFF"
+                                android:fontFamily="@font/montserrat_thin"
+                                android:gravity="center"
+                                android:textAlignment="center"
+                                android:textSize="15dp"
+                                android:text="NAMA BAYI"
+                                android:textStyle="bold"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/show_qr" />
+
+                            <TextView
+                                android:id="@+id/id_mentee"
+                                android:layout_width="275dp"
+                                android:layout_height="wrap_content"
+                                android:background="#FFFFFF"
+                                android:fontFamily="@font/montserrat_thin"
+                                android:gravity="center"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:text="PUSKESMAS"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/id_mentee_main" />
+
+                            <ImageView
+                                android:id="@+id/logobm"
+                                android:layout_width="275dp"
+                                android:layout_height="30dp"
+                                android:background="#FFFFFF"
+                                android:src="@drawable/logo"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/id_mentee" />
+
+                            <TextView
+                                android:id="@+id/reptext"
+                                android:layout_width="275dp"
+                                android:layout_height="273dp"
+                                android:background="#FFFFFF"
+                                android:fontFamily="@font/montserrat_thin"
+                                android:gravity="center"
+                                android:text=""
+                                android:textAlignment="center"
+                                app:layout_constraintBottom_toBottomOf="@+id/show_qr"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.504"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </android.support.constraint.ConstraintLayout>
+                    </android.support.v7.widget.CardView>
+                </android.support.constraint.ConstraintLayout>
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="Tunjukkan QR ke Petugas Untuk Discan"
+                    android:textColor="#10A5F5" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <ProgressBar
+            android:visibility="visible"
+            android:id="@+id/loading_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

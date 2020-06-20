@@ -65,11 +65,13 @@ public class HomeIbu extends Fragment {
         qrcode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent a = new Intent(getContext(), BalitaQR.class);
-                a.putExtra("nama",kNama);
-                a.putExtra("id",kId);
-                a.putExtra("posyandu",kPosyandu);
-                startActivity(a);
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                Fragment fragment = new CreateQRBalita();
+                fragment.setArguments(bundle);
+                fragmentManager.beginTransaction()
+                        .replace(R.id.content_ibu, fragment)
+                        .addToBackStack(null)
+                        .commit();
             }
         });
 

@@ -5,4 +5,6 @@
     <string name="logo_telkom_university">logo telkom university</string>
     <string name="logo_d3_teknologi_telekomunikasi">logo d3 teknologi telekomunikasi</string>
     <string name="CREATE_BABY_FROM_EXISTING_MOTHER">CREATE_BABY_FROM_EXISTING_MOTHER</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

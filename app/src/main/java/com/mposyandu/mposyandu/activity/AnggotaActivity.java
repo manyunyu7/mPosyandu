@@ -35,6 +35,7 @@ import com.mposyandu.mposyandu.fragment.ListIbu;
 import com.mposyandu.mposyandu.fragment.ProfileUser;
 import com.mposyandu.mposyandu.R;
 import com.mposyandu.mposyandu.fragment.Reminder;
+import com.mposyandu.mposyandu.fragment.ScanQRBalita;
 import com.mposyandu.mposyandu.tools.CircleTransform;
 import com.mposyandu.mposyandu.tools.Database;
 import com.mposyandu.mposyandu.tools.Logout;
@@ -187,8 +188,16 @@ public class AnggotaActivity extends AppCompatActivity
             return true;
         }
         if (id == R.id.actionQR) {
-            Intent intent = new Intent(getApplicationContext(), scanQRPeserta.class);
-            startActivity(intent);
+            Bundle bundle = new Bundle();
+            bundle.putParcelable("user", user);
+            bundle.putString("from", "1");
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            Fragment fragment = new ScanQRBalita();
+            (fragment).setArguments(bundle);
+            fragmentManager.beginTransaction()
+                    .replace(R.id.content_ketua, fragment)
+                    .addToBackStack(null)
+                    .commit();
             return true;
         }
         return super.onOptionsItemSelected(item);

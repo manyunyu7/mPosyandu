@@ -137,6 +137,7 @@ public class ListIbuBalita extends Fragment {
                                 balitaList.setPetugas(obj.getString("petugas"));
                                 balitaList.setCreator_id(obj.getInt("creator_id"));
                                 balitaList.setPhoto(obj.getString("photo"));
+                                balitaList.setId_qrcode(obj.getString("id_qrcode"));
                                 balita.add(balitaList);
                             }
                             rv.setVisibility(View.VISIBLE);
