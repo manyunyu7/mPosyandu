@@ -47,6 +47,12 @@ public class ScanQRBalita extends Fragment {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        getActivity().findViewById(R.id.fab).setVisibility(View.GONE);
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
